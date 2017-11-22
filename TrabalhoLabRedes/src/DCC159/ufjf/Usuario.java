@@ -11,17 +11,15 @@ package DCC159.ufjf;
  */
 public class Usuario {
     private String nome;
-    private String operacao;
-    private double valor;
+    private double saldo;
     private String senha;
 
     public Usuario() {
     }
 
-    public Usuario(String nome, String operacao, double valor, String senha) {
+    public Usuario(String nome, double saldo, String senha) {
         this.nome = nome;
-        this.operacao = operacao;
-        this.valor = valor;
+        this.saldo = saldo;
         this.senha = senha;
     }
 
@@ -29,33 +27,24 @@ public class Usuario {
         return nome;
     }
 
-    public String getOperacao() {
-        return operacao;
+    public Double getSaldo() {
+        return saldo;
     }
 
     public String getSenha() {
         return senha;
     }
 
-    public double getValor() {
-        return valor;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setOperacao(String operacao) {
-        this.operacao = operacao;
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
     }
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-    
+    }  
     
 }

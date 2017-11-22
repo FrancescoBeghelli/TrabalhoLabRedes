@@ -16,6 +16,8 @@ public class TrabalhoLabRedes {
      */
     public static void main(String[] args) {
 
+        Usuario usuario = new Usuario("Zezinho", 10000, "123456");
+        
         
         
     }
